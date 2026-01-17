@@ -1,0 +1,15 @@
+{
+  "short_name": "JWT Auth",
+  "name": "JWT Authorization — Система аутентификации",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff"
+}

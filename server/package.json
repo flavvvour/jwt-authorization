@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "format": "prettier --write \"**/*.{js,json,md}\" --ignore-path .prettierignore",
+    "format:check": "prettier --check \"**/*.{js,json,md}\" --ignore-path .prettierignore",
+    "format:md": "prettier --write \"**/*.md\"",
+    "format:docs": "prettier --write \"*.md\" \"docs/**/*.md\" \"README.md\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

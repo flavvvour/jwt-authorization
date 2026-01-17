@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>Активация аккаунта</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f6f9;
+        font-family: Montserrat, sans-serif;
+        color: #2d3748;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background: #667eea;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .content {
+        padding: 20px 25px;
+        line-height: 1.7;
+        color: #4a5568;
+      }
+
+      .content h2 {
+        color: #1a202c;
+        margin-top: 0;
+        font-size: 26px;
+      }
+      .activation-link {
+        display: block;
+        word-break: break-all;
+        color: #667eea;
+        text-decoration: none;
+        margin: 10px 0;
+      }
+      .button {
+        display: inline-block;
+        padding: 14px 28px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        transition: background 0.3s ease;
+      }
+      .button:hover {
+        background: #5a67d8;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #718096;
+        background: #f8fafc;
+        border-top: 1px solid #e2e8f0;
+      }
+      .footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+      @media (max-width: 480px) {
+        .container {
+          margin: 10px;
+          border-radius: 10px;
+        }
+        .header h1 {
+          font-size: 20px;
+        }
+        .button {
+          padding: 12px 20px;
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Добро пожаловать в систему!</h1>
+      </div>
+      <div class="content">
+        <h2>Спасибо за регистрацию</h2>
+        <p>
+          Для завершения регистрации подтвердите свой email, перейдя по ссылке
+          ниже:
+        </p>
+
+        <a href="{{activationLink}}" class="activation-link"
+          >{{activationLink}}</a
+        >
+
+        <p>Или нажмите на кнопку:</p>
+
+        <a href="{{activationLink}}" class="button">Активировать аккаунт</a>
+
+        <p>
+          Если вы не регистрировались на нашем сервисе — просто проигнорируйте
+          это письмо.
+        </p>
+      </div>
+      <div class="footer">
+        <p>&copy; 2026 JWT Auth System</p>
+        <p>by <a href="https://github.com/flavvvour">flavvvour</a></p>
+      </div>
+    </div>
+  </body>
+</html>
